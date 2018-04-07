@@ -1,0 +1,32 @@
+{
+  "name": "illusion-r",
+  "version": "1.0.0",
+  "description": "A game engine written in Typescript for cross platform game development.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KinoAR/Illusion-R.git"
+  },
+  "keywords": [
+    "game",
+    "engine",
+    "ts",
+    "js",
+    "typescript",
+    "plugins",
+    "games",
+    "development"
+  ],
+  "author": "Kino Rose",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/KinoAR/Illusion-R/issues"
+  },
+  "homepage": "https://github.com/KinoAR/Illusion-R#readme",
+  "dependencies": {
+    "pixi.js": "^4.7.3"
+  }
+}
