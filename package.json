@@ -28,5 +28,9 @@
   "homepage": "https://github.com/KinoAR/Illusion-R#readme",
   "dependencies": {
     "pixi.js": "^4.7.3"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "reload": "^2.2.2"
   }
 }
