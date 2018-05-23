@@ -4,10 +4,6 @@ export default [{
   output: {
     file: "dist/toybox.js",
     format: "umd",
-    globals:{
-      Physics: 'Physics',
-      Utils: 'Utils'
-    }
   },
   plugins:[
     resolve({

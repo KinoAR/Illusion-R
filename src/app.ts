@@ -1,4 +1,6 @@
-import {Physics, Utils, appendGlobally} from './core/Core'
+import {Physics} from './core/Physics';
+import {Utils} from './core/Utils';
+import {appendGlobally} from './core/Core'
 //@ts-ignore;
 const globalAppend = R.curry(appendGlobally)(window);
 globalAppend('Physics', Physics);
