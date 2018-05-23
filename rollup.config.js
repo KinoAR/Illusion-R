@@ -3,7 +3,11 @@ export default [{
   input: "bin/app.js",
   output: {
     file: "dist/toybox.js",
-    format: "umd"
+    format: "umd",
+    globals:{
+      Physics: 'Physics',
+      Utils: 'Utils'
+    }
   },
   plugins:[
     resolve({
