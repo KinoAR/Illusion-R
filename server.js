@@ -4,9 +4,10 @@ const path = require('path');
 const app = express();
 
 const gameDir = path.join(__dirname, "game");
-app.get("/", (req, res) => {
-  res.sendFile(path.join(gameDir, index.html));
-});
+app.use(express.static(gameDir));
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(gameDir, "index.html"));
+// });
 
 app.listen(4080, () => {
   console.log("Listening on port 4080");

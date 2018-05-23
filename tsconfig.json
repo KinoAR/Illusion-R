@@ -1,13 +1,20 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "alwaysStrict": true,
-    "module": "ES6",
+    "module": "esnext",
     "noImplicitAny": true,
-    "outDir": "dist",
+    "outDir": "bin",
     "pretty": true,
     "watch": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "express",
+      "ramda",
+      "bluebird",
+      "pixi.js",
+      "matter-js"
+    ]
   },
   "include": [
     "src/**/*"
