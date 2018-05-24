@@ -1,3 +1,6 @@
+//=============================================================================
+// SceneManager
+//=============================================================================
 import {SceneBase} from '../scenes/SceneBase';
 import {Stack, Queue} from '../core/DataStructures';
 class SceneManager {

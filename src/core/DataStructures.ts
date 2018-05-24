@@ -63,6 +63,10 @@ export class Node<T> {
   _next:Node<T>
   _prev:Node<T>
 
+  constructor(data:T) {
+    this._data = data;
+  }
+
   data<T>() {
     return this._data;
   }
@@ -81,5 +85,9 @@ export class Node<T> {
 
   setPrev(prev:Node<T>) {
     this._prev = prev;
+  }
+
+  setData(data:T) {
+    this._data = data;
   }
 }

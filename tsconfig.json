@@ -9,6 +9,7 @@
     "watch": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
+      "howler",
       "express",
       "ramda",
       "bluebird",
