@@ -1,4 +1,4 @@
-import {Scene} from '../core/Scene';
-export class SceneBase extends Scene {
+import {Stage} from '../core/Stage';
+export class SceneBase extends Stage {
   
 }

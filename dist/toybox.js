@@ -4,14 +4,16 @@
     (factory());
 }(this, (function () { 'use strict';
 
-    var Utils;
-    (function (Utils) {
-        Utils.VERSION = "0.0.1";
-    })(Utils || (Utils = {}));
     var Physics;
     (function (Physics) {
         Physics.name = '2DPhysics';
     })(Physics || (Physics = {}));
+
+    var Utils;
+    (function (Utils) {
+        Utils.VERSION = "0.0.1";
+    })(Utils || (Utils = {}));
+
     function appendGlobally(globalContext, name, entity) {
         globalContext[name] = entity;
     }
