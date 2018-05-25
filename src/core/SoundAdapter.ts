@@ -38,15 +38,29 @@ export class SoundAdapter {
   }
 }
 
+//=============================================================================
+// Sound
+//=============================================================================
 export class Sound {
+  _sources:[string];
   _internalSound:Howl;
   constructor(sources:[string]) {
+    this._sources = sources;
     this._internalSound = new Howl({
       src: [...sources],
       autoplay: false,
       loop: false,
       volume: 1.0
     });
+  }
+
+  play(id?:string | number) {
+    return this._internalSound.play(id)
+  }
+
+  stop() {
+    this._internalSound.stop();
+    return this;
   }
 
   setVolume(volume:number) {
@@ -82,5 +96,14 @@ export class Sound {
 
   volume() {
     return this._internalSound.volume();
+  }
+}
+
+//=============================================================================
+// SoundSprite
+//=============================================================================
+export class SoundSprite extends Sound {
+  constructor(sources:[string], sprite:{}) {
+    super(sources);
   }
 }

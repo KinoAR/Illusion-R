@@ -3,7 +3,7 @@
     "declaration": false,
     "alwaysStrict": true,
     "module": "esnext",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "outDir": "bin",
     "pretty": true,
     "watch": true,
